@@ -25,3 +25,14 @@ ft_printf must achieve the following mandatory requirements:
 * Manage the flags `hh`, `h`, `l`, `ll`, `j`, & `z`.
 
 Allowed functions are `write`, `malloc`, `free`, `exit` and the functions of `3 stdarg`. Everything else is forbidden.
+
+To compile, run `make`. This will compile **libftprintf.a**. To use, include `ft_printf.h` (located inside `inc` directory) and use just like `printf`:
+```c
+#include "ft_printf.h"
+
+int				main(void)
+{
+	ft_printf("%s, %s!\n", "Hello", "world");
+	return (0);
+}
+```
